@@ -12,22 +12,18 @@ docker run -p 5000:5000 redrest
 ```
 
 Endpoints:
+# Tworzenie nowego uzytkownika LUB aktualizowanie istniejącego
 - POST /user/<used_id>
+wymaga json body z wartościami do wpisania
 
-Tworzenie nowego uzytkownika LUB aktualizowanie istniejącego
-
+# Usuwanie uzytkownika po ID
 - DELETE /user/<user_id>
 
-Usuwanie uzytkownika po ID
-
+# Zwrócenie użytkownika konkretnego po ID
 - GET /user/<user_id>
 
-Zwrócenie użytkownika konkretnego po ID
-
+# Zwrócenie wszystkich użytkowników
 - GET /users
 
-Zwrócenie wszystkich użytkowników
-
+# Głosowanie na użytkownika
 - POST /user/<user_id>/vote
-
-Głosowanie na użytkownika
